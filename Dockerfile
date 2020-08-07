@@ -17,7 +17,7 @@ RUN npm install && \
 npm run build && \
 npm install -g serve 
 RUN apt-get update && \
-apt-get install \
+apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
