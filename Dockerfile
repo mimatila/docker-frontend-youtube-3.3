@@ -1,6 +1,7 @@
 FROM node
 WORKDIR /mydir
 #RUN apt-get update && apt-get install -y curl python
+#testing
 COPY . .
 EXPOSE 5000
 RUN npm install && \
