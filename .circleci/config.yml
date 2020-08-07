@@ -5,5 +5,5 @@ workflows:
   deploy:
     jobs:
       - docker/publish:
-          image: miamtila/docker-frontend-youtube-3.3
+          image: mimatila/docker-frontend-youtube-3.3
           tag: 'latest'
