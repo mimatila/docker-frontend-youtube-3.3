@@ -3,6 +3,7 @@ WORKDIR /mydir
 #RUN apt-get update && apt-get install -y curl python
 COPY util ./util
 COPY src ./src
+COPY youtube ./youtube
 #COPY node_modules ./node_modules
 COPY webpack.config.js .
 COPY README.md .
