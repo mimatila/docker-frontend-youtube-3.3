@@ -28,8 +28,8 @@ apt-key fingerprint 0EBFCD88 && \
 add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" && \
 apt-get update && \
 apt-get install docker-ce-cli && \
-cd youtube && \
-docker build -t youtube-dl . && \
-docker run youtube-dl https://imgur.com/JY5tHqr && \
-cd ..
+#cd youtube && \
+#docker build -t youtube-dl . && \
+#docker run youtube-dl https://imgur.com/JY5tHqr && \
+#cd ..
 CMD serve -s -l 5000 dist
