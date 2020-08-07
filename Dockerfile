@@ -5,14 +5,7 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
 RUN apt install -y nodejs
 #RUN npm install
 RUN npm run build
-COPY util ./util
-COPY src ./src
-#COPY node_modules ./node_modules
-COPY webpack.config.js .
-COPY README.md .
-COPY package-lock.json .
-COPY package.json .
-COPY config.js .
+COPY . .
 EXPOSE 5000
 RUN npm install -g serve
 CMD serve -s -l 5000 dist
