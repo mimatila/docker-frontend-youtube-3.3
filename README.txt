@@ -20,8 +20,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - 5000:5000
-    command: bash -c "docker build -t youtube-dl ."
-    command: bash -c "docker run youtube-dl https://imgur.com/JY5tHqr"
     container_name: frontend
   watchtower:
     image: containrrr/watchtower
