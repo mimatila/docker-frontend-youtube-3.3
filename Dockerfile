@@ -3,6 +3,7 @@ WORKDIR /mydir
 #RUN apt-get update && apt-get install -y curl python
 #testing
 COPY . .
+RUN apt-get update && apt-get install -y curl python
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
 RUN apt install -y nodejs
 EXPOSE 5000
