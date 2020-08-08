@@ -3,13 +3,13 @@ on: [push]
 jobs:
   Frontend_job:
     runs-on: node
-    name: A job to say hello
+    name: A job Frontend
     steps:
     - name: Frontend action step
-      id: hello
+      id: Frontend
       uses: actions/Frontend-docker-action@v1
       with:
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
     - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"github
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
